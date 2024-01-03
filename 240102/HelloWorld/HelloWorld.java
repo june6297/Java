@@ -6,11 +6,12 @@ public class HelloWorld{
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         //BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream("test.txt")));
         String data = in.readLine();
-        byte [] byteData = data.getBytes("utf-8");
+        //byte [] byteData = data.getBytes("utf-8");
 
-        PrintStream out = new PrintStream(System.out);
+        File file = new File("test.txt");
+        PrintStream out = new PrintStream(file);
         //PrintStream out2 = new PrintStream("test3.txt");
-        out.write(byteData);
+        //out.write(byteData);
         //out2.println(data);
     }
 }
