@@ -21,7 +21,6 @@ public class FileTransferThread extends Thread{
                 out.write(data, 0, size);
                 out.flush();
             }
-            a++;
             file.close();
             socket.close();
             System.out.println(socket.getInetAddress().toString()+"다운로드 완료");
