@@ -10,6 +10,7 @@ public class Client{
         conn.setRequestMethod("POST");
         conn.setRequestProperty("Content-Type", "application/octet-stream");
         
+        
         OutputStream out = conn.getOutputStream();
         FileInputStream in = new FileInputStream("C.png");
 
