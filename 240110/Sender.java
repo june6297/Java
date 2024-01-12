@@ -39,9 +39,5 @@ public class Sender{
         out.println(jsonString);
         // out.writeObject(persons);
         // out.close();
-
-
-
-
     }
 }

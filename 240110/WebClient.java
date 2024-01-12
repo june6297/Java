@@ -1,5 +1,8 @@
 import java.io.*;
 import java.net.*;
+import java.util.HashMap;
+
+import com.google.gson.Gson;
  
 public class WebClient{
     public static void main(String[] args)throws Exception{
@@ -15,13 +18,13 @@ public class WebClient{
         InputStream in = socket.getInputStream();
  
         // FileOutputStream fileOut = new FileOutputStream("google.html");
- 
- 
+
         byte[] data = new byte[1024*8];
         int size;
  
         while((size=in.read(data))!=-1){
             System.out.println(new String(data,0,size,"utf-8"));
+
             // fileOut.write(data,0,size);
             // fileOut.flush();
         }
